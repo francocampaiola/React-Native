@@ -8,7 +8,7 @@ export const globalStyles = StyleSheet.create({
   },
   calculatorContainer: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-end",
     paddingBottom: 20,
   },
   mainResult: {

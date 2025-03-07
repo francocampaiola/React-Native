@@ -7,7 +7,7 @@ import CustomButton from "@/components/shared/CustomButton";
 const HomeScreen = () => {
     return (
         <View className="px-10 mt-5">
-            <Link href="/tabs/(stack)/products" asChild>
+            <Link href="/products" asChild>
                 <CustomButton className="mb-2" color={"primary"}>
                     Productos
                 </CustomButton>
@@ -15,14 +15,14 @@ const HomeScreen = () => {
             <CustomButton
                 className="mb-2"
                 color="secondary"
-                onPress={() => router.push("/tabs/(stack)/profile")}
+                onPress={() => router.push("/profile")}
             >
                 Perfil
             </CustomButton>
             <CustomButton
                 className="mb-2"
                 color="tertiary"
-                onPress={() => router.push("/tabs/(stack)/settings")}
+                onPress={() => router.push("/settings")}
             >
                 Ajustes
             </CustomButton>
@@ -30,7 +30,7 @@ const HomeScreen = () => {
                 className="mb-2"
                 color="primary"
                 variant="text-only"
-                onPress={() => router.push("/tabs/products")}
+                onPress={() => router.push("/products")}
             >
                 Productos
             </CustomButton>

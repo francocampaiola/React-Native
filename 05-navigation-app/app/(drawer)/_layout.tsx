@@ -13,7 +13,8 @@ const DrawerLayout = () => {
                 headerShadowVisible: false,
                 sceneStyle: {
                     backgroundColor: 'white',
-                }
+                },
+                headerShown: false
             }}
         >
             <Drawer.Screen
@@ -33,6 +34,16 @@ const DrawerLayout = () => {
                     title: 'Horario',
                     drawerIcon: ({ color, size }) => (
                         <Ionicons name="calendar-outline" size={size} color={color} />
+                    )
+                }}
+            />
+            <Drawer.Screen
+                name="(tabs)"
+                options={{
+                    drawerLabel: 'Tabs + Stack',
+                    title: 'Tabs + Stack',
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons name="albums-outline" size={size} color={color} />
                     )
                 }}
             />

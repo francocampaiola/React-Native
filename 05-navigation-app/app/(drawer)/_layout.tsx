@@ -13,8 +13,7 @@ const DrawerLayout = () => {
                 headerShadowVisible: false,
                 sceneStyle: {
                     backgroundColor: 'white',
-                },
-                headerShown: false
+                }
             }}
         >
             <Drawer.Screen
@@ -41,6 +40,7 @@ const DrawerLayout = () => {
                 name="(tabs)"
                 options={{
                     drawerLabel: 'Tabs + Stack',
+                    headerShown: false,
                     title: 'Tabs + Stack',
                     drawerIcon: ({ color, size }) => (
                         <Ionicons name="albums-outline" size={size} color={color} />

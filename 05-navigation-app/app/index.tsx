@@ -6,7 +6,7 @@ import { Link, Redirect } from 'expo-router'
 const App = () => {
     // Redirigimos a la ruta /home
 
-    return <Redirect href={'/home'} />
+    return <Redirect href='/tabs' />
 
     // Código viejo
 

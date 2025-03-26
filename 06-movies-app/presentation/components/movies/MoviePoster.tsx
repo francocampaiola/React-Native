@@ -11,7 +11,7 @@ interface Props {
 
 const MoviePoster = ({ id, poster, smallPoster = false, className }: Props) => {
     return (
-        <Pressable className={`active:opacity-90 px-2 ${MoviePoster}`}>
+        <Pressable className={`active:opacity-90 px-2 ${className}`}>
             <Image
                 source={{ uri: poster }}
                 className="shadow-lg rounded-2xl w-full h-full"

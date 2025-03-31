@@ -23,3 +23,25 @@ export const popularMoviesAction = async () => {
     throw "Cannot load now playing movies";
   }
 };
+
+export const topRatedMoviesAction = async () => {
+  try {
+    const { data } = await movieApi.get<MovieDBMoviesResponse>("/top_rated");
+    const movies = data.results.map(MovieMapper.fromTheMovieDBtoMovie);
+    return movies;
+  } catch (error) {
+    console.log(error);
+    throw "Cannot load top rated movies";
+  }
+};
+
+export const upComingMoviesAction = async () => {
+  try {
+    const { data } = await movieApi.get<MovieDBMoviesResponse>("/upcoming");
+    const movies = data.results.map(MovieMapper.fromTheMovieDBtoMovie);
+    return movies;
+  } catch (error) {
+    console.log(error);
+    throw "Cannot load upcoming movies";
+  }
+};
